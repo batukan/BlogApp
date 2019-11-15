@@ -1,0 +1,69 @@
+﻿@using BlogMvcApp.Models
+@model IEnumerable<BlogModel>
+@{
+    ViewBag.Title = "List";
+}
+<div class="container my-3">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="input-group my-3 shadow-sm">
+                <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for..." id="search">
+                <span class="input-group-btn">
+                    <button class="btn btn-success" type="submit" id="SearchButton"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+            <div class="my-3 shadow-sm ">
+                <div class="list-group">
+                    @Html.Action("GetCategories", "Home")
+                </div>
+            </div>
+            <div class="card my-3 shadow-sm">
+                <div class="card-header">
+                    <h5>Our Motto <i class="fas fa-thumbtack"></i></h5>
+                </div>
+                <div class="card-body">
+                    <p>
+                        The best way to get a project done faster is to start sooner  
+                    </p>
+                    <p>
+                        --Jim Highsmith.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            @if (Model.Count() == 0)
+            {
+                <div class="alert alert-danger my-3" role="alert">
+                    <i class="fas fa-exclamation-circle"></i>
+                    There are <strong>no</strong> blog in this category
+                </div>
+            }
+            else
+            {
+                if (Model.Count() == 1)
+                {
+                    <div class="alert alert-success my-3" role="alert">
+                        <i class="fas fa-check-circle"></i>
+                        There are<strong> @Model.Count()</strong>  blog in this category
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-success my-3" role="alert">
+                        <i class="fas fa-check-circle"></i>
+                        There are<strong> @Model.Count()</strong>  blogs in this category
+                    </div>
+                }
+            }
+            <div class="row">
+                @Html.Partial("_BlogList", Model)
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn btn-outline-success m-3 button-right" type="button" onclick="topFunction()" id="myBtn" data-toggle="tooltip" data-placement="right" title="Go to Top">
+    <i class="fas fa-angle-double-up"></i>
+</button>
+
+

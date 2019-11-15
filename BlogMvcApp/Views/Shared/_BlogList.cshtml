@@ -1,0 +1,27 @@
+﻿@using BlogMvcApp.Models
+@model IEnumerable<BlogModel>
+@foreach (var blog in Model)
+{
+    <div class="col-md-12">
+        <div class="shadow my-3">
+            <div class="card-body" id="BlogCard">
+                <div class="media">
+                    <div id="answer">
+                        <p id="answerNumber">2</p>
+                        <p id="answerText">Answer</p>
+                    </div>
+                    <div class="media-body p-2">
+                        <h5 class="card-title mt-0">@blog.Title</h5>
+                        <p class="card-text">@blog.Description</p>
+                    </div>
+                </div>
+                <div>
+                    <hr />
+                    <a href="/Home/Details/@blog.Id" class="btn btn-outline-success btn-sm" title="Read More...">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+}

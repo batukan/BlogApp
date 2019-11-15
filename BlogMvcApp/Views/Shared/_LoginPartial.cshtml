@@ -1,0 +1,32 @@
+﻿@if (Request.IsAuthenticated)
+{
+    if (User.IsInRole("admin"))
+    {
+        <nav class="navbar navbar-light bg-light">
+            <div class="float-right">
+                <a href="/AdminPage/Index" class="btn btn-link" id="account">
+                    Admin Page <i class="fas fa-lock-open"></i>
+                </a>
+                <a href="/Account/Logout" class="btn btn-link" id="account">Log Out <i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </nav>
+    }
+    else
+    {
+        <nav class="navbar navbar-light bg-light">
+            <div class="float-right">
+                <a class="btn btn-link" id="account">@User.Identity.Name <i class="fas fa-user"></i></a>
+                <a href="/Account/Logout" class="btn btn-link" id="account">Log Out <i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </nav>
+    }
+}
+else
+{
+    <nav class="navbar navbar-light bg-light">
+        <div class="float-right">
+            <a href="/Account/Login" class="btn btn-link" id="account">Log In <i class="fas fa-sign-in-alt"></i></a>
+            <a href="/Account/Register" class="btn btn-link" id="account">Sign Up <i class="fas fa-user-plus"></i></a>
+        </div>
+    </nav>
+}

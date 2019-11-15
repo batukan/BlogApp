@@ -1,0 +1,279 @@
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    background-image: url(../Upload/bg.jpeg);
+}
+
+.navbar-light {
+    background: url(img/navbarphoto.jpg);
+}
+
+.navbar .nav-item {
+    padding: 5px 0;
+}
+
+.jumbotron {
+    background: url(img/navbarphoto.jpg);
+    background-size: cover;
+    height: 100%;
+    color: #F0FFF0;
+    font-weight: 900;
+}
+
+div.hr {
+    border-color: #fff;
+    border-image: none;
+    border-style: solid none none;
+    height: 2px;
+}
+
+.jumbotron .lead {
+    font-weight: 700;
+}
+
+#account {
+    color: #ED305C;
+}
+
+    #account:hover {
+        color: #ED305C;
+    }
+
+#WhoAmI {
+    color: #ED305C;
+    border-color: #ED305C;
+    transition: all 0.5s linear;
+}
+
+    #WhoAmI:hover {
+        color: #fff;
+        background-color: #ED305C;
+    }
+
+.navbar {
+    color: #fff;
+    background-color: #B5B7B7;
+}
+
+#footer {
+    color: #fff;
+    background-color: #2C3E50;
+    font-weight: 300;
+    height: 80px;
+    font-size: 1em;
+}
+
+footer {
+    background-color: #34495E;
+    color: #fff;
+    padding: 30px;
+    font-size: 0.75em;
+}
+
+address i {
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 1rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.latest-tweets .fa-twitter {
+    color: #1DA1F2;
+}
+
+.latest-tweets li {
+    padding-bottom: 20px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+    footer ul li {
+        display: inline-block;
+        margin-right: 7px;
+        list-style: none;
+        padding-right: 10px;
+    }
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+    transition: all 0.5s linear;
+}
+
+    .btn-social:hover {
+        color: #19AC78;
+        background-color: #fff;
+    }
+
+address a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s linear;
+}
+
+    address a:hover {
+        color: #19AC78;
+        text-decoration: none;
+    }
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+h4 {
+    color: #B5B7B7;
+    font-weight: bold;
+}
+
+
+.pagination li a {
+    color: #19AC78;
+}
+
+#BlogCard {
+    border-left: 4px solid #19AC78;
+    background-color: #F8F9FA;
+    height: 180px;
+    line-height: 80%;
+}
+
+#BlogDetails {
+    border-left: 4px solid #19AC78;
+    background-color: #F8F9FA;
+    height: 700px;
+    line-height: 80%;
+}
+
+.bd-example-tabs
+{
+    margin-top:200px;
+}
+#answer {
+    background-color: #ED305C;
+    color: #fff;
+    margin: 5px 0;
+    height: 60px;
+    width: 60px;
+}
+
+#answerNumber {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+#answerText {
+    text-align: center;
+    font-size: 18px;
+}
+
+#blogDate {
+    text-align: left;
+}
+
+#nav-tab a {
+    color: #19AC78;
+}
+
+.form-control:focus,
+.custom-select:focus {
+    border-color: rgba(126, 239, 104, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+    outline: 0 none;
+}
+
+#mail {
+    background-color: #2C3E50;
+    border: none;
+    border-radius: 0;
+    transition: all 1.0s linear;
+}
+
+    #mail:focus {
+        background-color: #fff;
+        border-color: none;
+        box-shadow: none;
+        outline: 0;
+    }
+
+#search {
+    border-radius: 0;
+}
+
+#SearchButton {
+    background-color: #D4EDDA;
+    color: #000;
+    border-color: #D4EDDA;
+}
+
+.input-group .btn-success {
+    border-radius: 0;
+}
+
+#about h2 {
+    color: #B5B7B7;
+    font-weight: bold;
+}
+
+h2 {
+    color: #B5B7B7;
+}
+
+#about h3 {
+    color: #ED305C;
+    opacity: 1;
+    font-weight: bold;
+}
+
+#about img {
+    border: 2px dashed #19AC78;
+}
+
+#about hr {
+}
+
+
+#footer small {
+    color: #ED305C;
+}
+
+.comment a {
+    color: #ED305C;
+}
+
+.comment h6 {
+    color: #19AC78;
+}
+
+#active {
+    color: #000;
+    background-color: #D4EDDA;
+    border-color: #D4EDDA;
+}
+
+#mousePointer {
+    text-decoration: none;
+    color: #ED305C;
+}
+
+    #mousePointer:hover {
+        text-decoration: underline;
+    }
+
+#homeCard {
+    border: 2px dashed #ED305C;
+}

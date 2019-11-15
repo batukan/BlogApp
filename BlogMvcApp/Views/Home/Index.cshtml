@@ -1,0 +1,53 @@
+﻿@using BlogMvcApp.Models
+@model IEnumerable<BlogModel>
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is my blog site. I will share many blogs from data structures to 2D games on this site.</p>
+        <div class="hr my-4">
+        </div>
+        <p>Don't forget to ask your questions and share your ideas about my site.</p>
+        <a class="btn btn-outline" href="/Home/About" role="button" id="WhoAmI">Who Am I</a>
+    </div>
+</div>
+<div class="container my-3">
+    <hr />
+    <h4>Most Viewed Posts</h4>
+    <hr />
+    <div class="row">
+        @Html.Partial("_BlogList", Model)
+    </div>
+
+</div>
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-center text-white-50 my-3" id="homeCard">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-list-ul fa-3x"></i></h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="/Home/List" class="btn btn-outline" id="WhoAmI">Blog List</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-center text-white-50 my-3" id="homeCard">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-anchor fa-3x"></i></h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="/Home/Contact" class="btn btn-outline" id="WhoAmI">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <hr />
+    <h4>Recently Posts</h4>
+    <hr />
+    <div class="row">
+        @Html.Partial("_BlogList", Model)
+    </div>
+</div>
